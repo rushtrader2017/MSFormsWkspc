@@ -6,7 +6,7 @@ export class MSFormsFrame implements ComponentFramework.StandardControl<IInputs,
 
     private iframe: HTMLIFrameElement;
     private container: HTMLDivElement;
-    private varboolen: boolean;
+    private varboolean: boolean;
 
     constructor() { }
 
@@ -24,16 +24,16 @@ export class MSFormsFrame implements ComponentFramework.StandardControl<IInputs,
         this.container.style.width = "100%";
         this.container.style.height = "100%";
 
-        this.varboolen = false;
+        this.varboolean = false;
     }
 
     public updateView(
         context: ComponentFramework.Context<IInputs>
     ): void {
 
-        if (!this.varboolen) {
+        if (!this.varboolean) {
 
-            this.varboolen = true;
+            this.varboolean = true;
 
             this.iframe = document.createElement("iframe");
 
@@ -46,7 +46,7 @@ export class MSFormsFrame implements ComponentFramework.StandardControl<IInputs,
             this.container.appendChild(this.iframe);
         }
 
-        const srcurl = context.parameters.sampleProperty.raw;
+        const srcurl = context.parameters.FormUrl.raw;
 
         if (srcurl) {
             this.iframe.src = srcurl;
