@@ -2,7 +2,7 @@
 
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
-export class MSFormsFrame implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+export class MSFormsViewer implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
     private iframe: HTMLIFrameElement;
     private container: HTMLDivElement;
