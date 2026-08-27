@@ -8,7 +8,7 @@
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props')" />
 
   <PropertyGroup>
-    <ProjectGuid>6c8d0a2d-027d-4df7-af7b-2670ce2b4978</ProjectGuid>
+    <ProjectGuid>2618403c-1192-41ec-b6e8-703b0425261e</ProjectGuid>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <!--Remove TargetFramework when this is available in 16.1-->
     <TargetFramework>net462</TargetFramework>
@@ -49,7 +49,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\iframe.pcfproj" />
+    <ProjectReference Include="..\..\MSFormsViewer.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
